@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web App Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #ffeec2, #fcb7b7);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 90%;
+            width: 90%;
+            max-width: 400px;
+            padding: 15px;
+            box-sizing: border-box;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .profile-image {
+            margin-bottom: 20px;
+        }
+
+        .profile-image img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            padding: 12px;
+            border-radius: 20px;
+            background-color: #f5c6c6;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #e0b2b2;
+            transform: scale(1.05);
+        }
+
+        .btn-custom:active {
+            background-color: #d89e9e;
+            transform: scale(1);
+        }
+
+        .pew-pew {
+            position: absolute;
+            top: 100px; /* Adjust this value to move the text up or down */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #f5c6c6;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 10px; /* Position at the bottom of the container */
+            width: 100%;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="cdxfbcn.png" alt="User Pic">
+        </div>
+        <div class="buttons">
+            <button class="btn btn-custom">We are coming soon</button>
+            <button class="btn btn-custom" onclick="window.location.href='https://t.me/S23FMF34OT'">Join Telegram</button>
+            <button class="btn btn-custom" onclick="window.location.href='https://t.me/S23FMF34OT'">Follow us on Instagram</button>
+            <button class="btn btn-custom" onclick="window.location.href='https://t.me/S23FMF34OT'">invite friends</button>
+        </div>
+        <div class="pew-pew">Kittens</div>
+        <div class="copyright">© Copyrighted by Meow 2024</div>
+    </div>
+</body>
+</html>
