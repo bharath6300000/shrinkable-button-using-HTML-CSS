@@ -143,13 +143,19 @@
     </div>
      <script>
         function shareToTelegram() {
-            var referralCode = 'kittyId066164368'; // Customize as needed
-            var shareUrl = `https://t.me/kittens_house_bot/start?startapp=${referralCode}`;
-
-            var message = `Play with me, become cryptoexchange CEO and get a token AirDrop! 💸 2k Coins as a first-time gift 🔥 25k Coins if you have Telegram Premium\n\nLaunch here: ${shareUrl}`;
+            // URL of your bot
+            var botUrl = 'https://t.me/kittens_house_bot'; // Replace with your bot's link
+            
+            // Message to share
+            var message = `Join our amazing Telegram bot and get exclusive rewards! ${botUrl}`;
+            
+            // Encode the message for URL
             var encodedMessage = encodeURIComponent(message);
-            var telegramShareUrl = `https://web.telegram.org/a/#7333651386`;
-
+            
+            // Create the Telegram share URL
+            var telegramShareUrl = `https://t.me/share/url?url=${encodedMessage}`;
+            
+            // Open the share dialog in a new tab
             window.open(telegramShareUrl, '_blank');
         }
     </script>
