@@ -143,19 +143,10 @@
     </div>
    <script>
         function shareToTelegram() {
-            var username = document.getElementById('username').value.trim();
             var botUrl = 'https://t.me/kittens_house_bot'; // Replace with your bot's link
-            
-            // Prepare the message
-            var message = username ? `Join our amazing Telegram bot and get exclusive rewards! ${botUrl} - Shared by ${username}` : `Join our amazing Telegram bot and get exclusive rewards! ${botUrl}`;
-
-            // Encode the message
+            var message = `Join our amazing Telegram bot and get exclusive rewards! ${botUrl}`;
             var encodedMessage = encodeURIComponent(message);
-
-            // Create the Telegram share URL
             var telegramShareUrl = `https://t.me/share/url?url=${encodedMessage}`;
-
-            // Open the share dialog in a new tab
             window.open(telegramShareUrl, '_blank');
         }
     </script>
