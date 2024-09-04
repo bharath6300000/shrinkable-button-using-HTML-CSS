@@ -141,26 +141,22 @@
         </div>
         <div class="copyright">© Copyrighted by Kittens 2024</div>
     </div>
-     <script>
+   <script>
         function shareToTelegram() {
-            // URL of your bot
+            var username = document.getElementById('username').value.trim();
             var botUrl = 'https://t.me/kittens_house_bot'; // Replace with your bot's link
             
-            // Message to share
-            var message = `Join our amazing Telegram bot and get exclusive rewards! ${botUrl}`;
-            
-            // Encode the message for URL
+            // Prepare the message
+            var message = username ? `Join our amazing Telegram bot and get exclusive rewards! ${botUrl} - Shared by ${username}` : `Join our amazing Telegram bot and get exclusive rewards! ${botUrl}`;
+
+            // Encode the message
             var encodedMessage = encodeURIComponent(message);
-            
+
             // Create the Telegram share URL
             var telegramShareUrl = `https://t.me/share/url?url=${encodedMessage}`;
-            
+
             // Open the share dialog in a new tab
             window.open(telegramShareUrl, '_blank');
-
-            // Optional: Provide the image link and instructions
-            var imageLink = 'https://postimg.cc/k23Y8gq5'; // Replace with your image URL
-            alert('You can also share this image: ' + imageLink + '\nCopy the link and share it manually along with the bot link.');
         }
     </script>
 </body>
