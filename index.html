@@ -129,6 +129,7 @@
             <button class="btn btn-custom">We are coming soon</button>
             <button class="btn btn-custom" onclick="window.location.href='https://t.me/kittens_community'">Join Telegram</button>
             <button class="btn btn-custom" onclick="window.open('https://www.instagram.com/_kittenscommunity/', '_blank')">Follow us on Instagram</button>
+            <button class="btn btn-custom" onclick="shareToTelegram()">Invite Friends</button>
         </div>
         <div class="notice">
             <strong>Important Notice:</strong> To gain access to the bot when it is released, you must join, share, and refer a minimum number of people. Only those who meet these requirements will be granted access. Additionally, users with higher referral counts will enjoy extra "kitty tokens".
@@ -140,5 +141,17 @@
         </div>
         <div class="copyright">© Copyrighted by Kittens 2024</div>
     </div>
+     <script>
+        function shareToTelegram() {
+            var referralCode = 'kittyId066164368'; // Customize as needed
+            var shareUrl = `https://t.me/kittens_house_bot/start?startapp=${referralCode}`;
+
+            var message = `Play with me, become cryptoexchange CEO and get a token AirDrop! 💸 2k Coins as a first-time gift 🔥 25k Coins if you have Telegram Premium\n\nLaunch here: ${shareUrl}`;
+            var encodedMessage = encodeURIComponent(message);
+            var telegramShareUrl = `https://web.telegram.org/a/#7333651386`;
+
+            window.open(telegramShareUrl, '_blank');
+        }
+    </script>
 </body>
 </html>
