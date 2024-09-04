@@ -78,11 +78,21 @@
 
         .pew-pew {
             position: absolute;
-            top: 100px;
+            top: 65px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 24px;
             color: #f5c6c6;
+        }
+
+        .notice {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+            padding: 10px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c2c7;
+            border-radius: 10px;
         }
 
         .terms {
@@ -118,12 +128,15 @@
         <div class="buttons">
             <button class="btn btn-custom">We are coming soon</button>
             <button class="btn btn-custom" onclick="window.location.href='https://t.me/kittens_community'">Join Telegram</button>
-            <button class="btn btn-custom" onclick="window.location.href='https://www.instagram.com/_kittenscommunity/'">Follow us on Instagram</button>
-            <button class="btn btn-custom" onclick="window.location.href='https://t.me/kittens_house_bot?profile'">Invite Friends</button>
+            <button class="btn btn-custom" onclick="window.open('https://www.instagram.com/_kittenscommunity/', '_blank')">Follow us on Instagram</button>
+        </div>
+        <div class="notice">
+            <strong>Important Notice:</strong> To gain access to the bot when it is released, you must join, share, and refer a minimum number of people. Only those who meet these requirements will be granted access. Additionally, users with higher referral counts will enjoy extra "kitty tokens".
+            </div>
         </div>
         <div class="pew-pew">Kittens</div>
         <div class="terms">
-            <a href="terms.html" target="_blank">Terms and Conditions</a>
+            <a href="terms.html">Terms and Conditions</a>
         </div>
         <div class="copyright">© Copyrighted by Meow 2024</div>
     </div>
